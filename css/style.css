@@ -1,0 +1,77 @@
+/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+html { box-sizing: border-box; }
+*, *:after, *:before { box-sizing: inherit; }
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+růžová: #c5308a
+světle šedá: #f0f0f0
+*/
+
+/* --- pod tuto čáru piš svoje CSS --------------------------------------- */
+
+body {
+    font-family: 'Lora', serif;
+}
+
+.logo {
+	/* nadpis h1 jsme použili na logo v menu, ale musíme si upravit, jak vypadá, abychom neměli v menu obrovský nadpis */
+	font-size: 16px;
+	margin: 0;
+    font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    color: #c5308a;
+}
+
+.bg-pink {
+    background-color: #c5308a;
+}
+
+.bg-light {
+    background-color: #f0f0f0 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding: 1rem;
+}
+
+.nav-link:hover {
+    background-color: #c5308a;
+}
+
+.img-grey {
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.img-grey:hover {
+    filter: grayscale(0);
+}
+
+.kadernice {
+	/* kolem obrázku kadeřnic chceme udělat vlastní tečkovaný rámeček, který v Bootstrapu není k dispozici */
+	border: 2px dotted #c5308a;
+	padding: 2px;
+}
